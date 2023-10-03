@@ -1,0 +1,9 @@
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| PostID   | int          | NO   | PRI | NULL    | auto_increment |
+| PostDesc | varchar(200) | YES  |     | NULL    |                |
+| Image    | varchar(200) | YES  |     | NULL    |                |
+| UserID   | int          | NO   | MUL | NULL    |                |
+| CreatAT  | datetime     | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+

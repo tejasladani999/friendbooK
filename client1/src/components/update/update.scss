@@ -1,0 +1,68 @@
+@import "../../style.scss";
+
+
+.update{
+    @include themify($themes){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background-color:themed("bg");;
+    padding: 50px;
+    z-index: 999;
+
+    .card{
+        width: 90%;
+        border-radius: 10px;
+        min-height: 600px;
+        overflow: hidden;
+        color: themed("textColor");
+
+        .button{
+            position: relative;
+            float: right;
+            width: 20%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ef5252;
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        h1{
+            color:#555;
+        }   
+        form{
+            display: center;
+            flex-direction: column;
+            gap: 30px;
+            input{
+                border: none;
+                border-bottom: 1px solid lightgray;
+                padding: 10px 0px;
+                margin: 10px;
+                color:themed("textColor");
+            }   
+            
+            button{
+                align-items: center;
+                width: 20%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #514bca;
+                color:white;
+                font-weight: bold;
+                cursor: pointer;
+                float:inline-end;
+            }
+        
+        }
+    }
+}
+}
